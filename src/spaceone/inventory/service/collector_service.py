@@ -9,7 +9,7 @@ from spaceone.inventory.manager.virtual_machine_manager import *
 _LOGGER = logging.getLogger(__name__)
 MAX_WORKER = 20
 SUPPORTED_RESOURCE_TYPE = ['inventory.Server', 'inventory.CloudService']
-SUPPORTED_SCHEDULES = ['hours']
+SUPPORTED_SCHEDULES = ['interval']
 
 FILTER_FORMAT = []
 
