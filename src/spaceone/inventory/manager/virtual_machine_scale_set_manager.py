@@ -26,7 +26,7 @@ class VmScaleSetManager(AzureManager):
         """
         secret_data = params['secret_data']
         subscription_info = params['subscription_info']
-        
+
         vm_scale_set_conn: VmScaleSetConnector = self.locator.get_connector(self.connector_name, **params)
         vm_scale_sets = []
         for vm_scale_set in vm_scale_set_conn.list_vm_scale_sets():
